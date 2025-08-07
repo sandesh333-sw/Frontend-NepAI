@@ -2,6 +2,7 @@ import "./Sidebar.css";
 import { useContext, useEffect } from "react";
 import { MyContext } from "./MyContext";
 import { v1 as uuidv1 } from "uuid";
+import mainLogo from "./assets/mainLogo.png";
 
 function SideBar() {
   const {
@@ -92,7 +93,7 @@ function SideBar() {
     <section className="sidebar">
       {/* new chat button */}
       <button onClick={createNewChat}>
-        <img src="src/assets/mainlogo.png" className="logo" alt="appimage" />
+        <img src={mainLogo} className="logo" alt="appimage" />
         <span>
           <i className="fa-solid fa-pencil"></i>
         </span>
