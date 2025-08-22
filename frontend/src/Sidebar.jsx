@@ -13,7 +13,7 @@ function SideBar() {
     setPrompt,
     setReply,
     setCurrThreadId,
-    setPrevChats, // ✅ typo fixed
+    setPrevChats, // 
   } = useContext(MyContext);
 
   const getAllThreads = async () => {
@@ -44,7 +44,7 @@ function SideBar() {
     setPrompt("");
     setReply(null);
     setCurrThreadId(uuidv1());
-    setPrevChats([]); // ✅ typo fixed
+    setPrevChats([]); 
   };
 
   const changeThread = async (newThreadId) => {
