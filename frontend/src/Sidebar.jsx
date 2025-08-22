@@ -18,7 +18,7 @@ function SideBar() {
 
   const getAllThreads = async () => {
     try {
-      const response = await fetch("http://ec2-16-171-110-234.eu-north-1.compute.amazonaws.com:8080/api/thread");
+      const response = await fetch("http://ec2-56-228-81-135.eu-north-1.compute.amazonaws.com:8080/api/thread");
       const res = await response.json();
       console.log(res);
 
@@ -51,7 +51,7 @@ function SideBar() {
     setCurrThreadId(newThreadId);
     try {
       const response = await fetch(
-        `http://ec2-16-171-110-234.eu-north-1.compute.amazonaws.com:8080/api/thread/${newThreadId}`
+        `http://ec2-56-228-81-135.eu-north-1.compute.amazonaws.com:8080/api/thread/${newThreadId}`
       );
       const res = await response.json();
       console.log(res);
@@ -66,7 +66,7 @@ function SideBar() {
   const deleteThread = async (threadId) => {
   try {
     const response = await fetch(
-      `http://ec2-16-171-110-234.eu-north-1.compute.amazonaws.com:8080/api/thread/${threadId}`,
+      `http://ec2-56-228-81-135.eu-north-1.compute.amazonaws.com:8080/api/thread/${threadId}`,
       { method: "DELETE" }
     );
     const res = await response.json();
